@@ -328,7 +328,7 @@ conn.sendMessage(id, 'ulangi dengan  !pict cewek/cowok\n\nMisal: !pict cowok' ,M
    {
       let is = m.message.conversation.toLocaleLowerCase()
 
-      if (is == '_pantun')
+      if (is == '$pantun')
       {
 
          fetch('https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-pantun-pakboy.txt')
@@ -356,7 +356,7 @@ const get = require('got')
     console.log(body[0]['name'])
     conn.sendMessage(id,`📌DATA WABAH COVID-19 TERBARU DI INDONESIA\n\n📍Positif ==> ${positif} \n📍Sembuh ==> ${sembuh} \n📍Meninggal ==> ${meninggal}\n📍Dirawat ==> ${dirawat}`, MessageType.text);
 }
-   if (text.includes("_quotes"))
+   if (text.includes("$quotes"))
    {
       var url = 'https://jagokata.com/kata-bijak/acak.html'
       axios.get(url)
